@@ -1,0 +1,134 @@
+# Раздел: Логи и файлы отладки
+# Игнорирование папки logs и всех ее содержимого
+logs
+# Игнорирование всех файлов с расширением .log
+*.log
+# Игнорирование лог-файлов npm отладки (все варианты)
+npm-debug.log*
+# Игнорирование лог-файлов yarn отладки (все варианты)
+yarn-debug.log*
+# Игнорирование лог-файлов yarn ошибок (все варианты)
+yarn-error.log*
+# Игнорирование лог-файлов pnpm отладки (все варианты)
+pnpm-debug.log*
+# Игнорирование лог-файлов lerna отладки (все варианты)
+lerna-debug.log*
+
+# Раздел: Зависимости и сборка
+# Игнорирование всей папки node_modules (зависимости npm/yarn/pnpm)
+node_modules
+# Игнорирование папки dist (собранные файлы для production)
+dist
+# Игнорирование папки dist-ssr (собранные файлы для Server-Side Rendering)
+dist-ssr
+# Игнорирование всех файлов с суффиксом .local (локальные конфиги)
+*.local
+
+# Раздел: Файлы и директории редакторов кода
+# Игнорирование всей папки .vscode и ее содержимого
+.vscode/*
+# Исключение: НЕ игнорировать файл extensions.json в папке .vscode
+!.vscode/extensions.json
+# Игнорирование папки .idea (конфигурация JetBrains IDE)
+.idea
+# Игнорирование файлов .DS_Store (метаданные macOS)
+.DS_Store
+# Игнорирование файлов .suo (настройки пользователя Visual Studio)
+*.suo
+# Игнорирование файлов .ntvs* (настройки Node Tools for Visual Studio)
+*.ntvs*
+# Игнорирование файлов .njsproj (проекты Node.js для Visual Studio)
+*.njsproj
+# Игнорирование файлов .sln (решения Visual Studio)
+*.sln
+# Игнорирование файлов .sw? (swap-файлы редакторов, например .swp, .swo)
+*.sw?
+
+# /*
+# ===========================================
+# ПОЯСНЕНИЯ К КОММЕНТАРИЯМ В ДАННОМ ФАЙЛЕ:
+# ===========================================
+
+# 1. Файл .gitignore - specifies files and directories to ignore in Git version control
+
+# 2. Комментарий "Раздел: Логи и файлы отладки" - introduces the section for log files
+#    and debugging artifacts that should not be committed to version control
+
+# 3. Комментарий "Игнорирование папки logs и всех ее содержимого" - explains that
+#    the entire logs directory and its contents will be ignored by Git
+
+# 4. Комментарий "Игнорирование всех файлов с расширением .log" - describes the pattern
+#    to ignore all files with .log extension in any directory
+
+# 5. Комментарий "Игнорирование лог-файлов npm отладки..." - specifies ignoring npm
+#    debug log files with any additional characters after the base name
+
+# 6. Комментарий "Игнорирование лог-файлов yarn отладки..." - specifies ignoring yarn
+#    debug log files with any additional characters
+
+# 7. Комментарий "Игнорирование лог-файлов yarn ошибок..." - specifies ignoring yarn
+#    error log files with any additional characters
+
+# 8. Комментарий "Игнорирование лог-файлов pnpm отладки..." - specifies ignoring pnpm
+#    debug log files with any additional characters
+
+# 9. Комментарий "Игнорирование лог-файлов lerna отладки..." - specifies ignoring lerna
+#    debug log files with any additional characters
+
+# 10. Комментарий "Раздел: Зависимости и сборка" - introduces the section for
+#     dependencies and build artifacts that should not be committed
+
+# 11. Комментарий "Игнорирование всей папки node_modules..." - explains ignoring the
+#     node_modules directory which contains all npm/yarn/pnpm dependencies
+
+# 12. Комментарий "Игнорирование папки dist..." - describes ignoring the dist directory
+#     which contains production build artifacts
+
+# 13. Комментарий "Игнорирование папки dist-ssr..." - describes ignoring the dist-ssr
+#     directory which contains server-side rendering build artifacts
+
+# 14. Комментарий "Игнорирование всех файлов с суффиксом .local..." - specifies ignoring
+#     files with .local suffix, commonly used for local configuration files
+
+# 15. Комментарий "Раздел: Файлы и директории редакторов кода" - introduces the section
+#     for IDE and editor-specific files that should not be committed
+
+# 16. Комментарий "Игнорирование всей папки .vscode и ее содержимого" - explains ignoring
+#     the entire .vscode directory used by Visual Studio Code
+
+# 17. Комментарий "Исключение: НЕ игнорировать файл extensions.json..." - creates an
+#     exception to not ignore the extensions.json file in the .vscode directory
+
+# 18. Комментарий "Игнорирование папки .idea..." - specifies ignoring the .idea directory
+#     used by JetBrains IDEs (WebStorm, IntelliJ, etc.)
+
+# 19. Комментарий "Игнорирование файлов .DS_Store..." - describes ignoring .DS_Store files
+#     which are metadata files created by macOS Finder
+
+# 20. Комментарий "Игнорирование файлов .suo..." - specifies ignoring .suo files which are
+#     user-specific settings for Visual Studio
+
+# 21. Комментарий "Игнорирование файлов .ntvs*..." - specifies ignoring Node Tools for
+#     Visual Studio files
+
+# 22. Комментарий "Игнорирование файлов .njsproj..." - specifies ignoring Node.js project
+#     files for Visual Studio
+
+# 23. Комментарий "Игнорирование файлов .sln..." - specifies ignoring Visual Studio
+#     solution files
+
+# 24. Комментарий "Игнорирование файлов .sw?..." - specifies ignoring swap files created
+#     by various text editors (like Vim .swp files)
+
+# СИНТАКСИС GITIGNORE:
+# - # - комментарий
+# - * - wildcard для любого количества символов
+# - ? - wildcard для одного символа
+# - ! - инверсия (исключение из правил игнорирования)
+# - / - указание на директорию
+# - [] - диапазон символов
+
+# НАЗНАЧЕНИЕ ФАЙЛА:
+# Предотвращение коммита в Git временных файлов, зависимостей, артефактов сборки
+# и конфигураций редакторов для поддержания чистоты репозитория
+# */
